@@ -16,9 +16,12 @@ Florida State College at Jacksonville - Software Defined Networking Course
 
 ## :globe_with_meridians: Overview
 
-This capstone group project challenges you to synthesize everything you've learned about network automation throughout this course. You will create an original Python application that combines network device interaction with artificial intelligence to solve a real-world networking problem.
+This capstone group project challenges you to synthesize everything you've learned about network automation throughout this course. You will create an original Python application that either interacts with a Larege Language Mdoel (LLM) for intelligent network operationsor a containerized python web application that backs up a network device using the python `flask` library.
 
-Your solution must demonstrate mastery of network automation protocols while leveraging AI services to add intelligent functionality. This project represents the culmination of your learning and should showcase industry-standard development practices.
+FSCJ is currently in the process of obtaining the necessary components in order to consume a LLM programatically. If an LLM is
+available for your semester you will find the login instructions in your groups homepage in Canvas.
+
+You only need to choose one of Core Requirements. If you choose to add more it is certainly encouraged but the minimum is one of each. The idea is that you are introduced to one next generation tool of AI with either Model Context Protocol (MCP), Lang-graph and/or Lang-Chain, Flask Webframework or Django Webframework. That means you will either be making an AI Agent, AI Bot, AI Workflow, or a Containerized Web Application.
 
 ### Core Requirements
 
@@ -28,15 +31,19 @@ Your solution must demonstrate mastery of network automation protocols while lev
   - **RESTCONF** - RESTful API for network configuration and monitoring
   - **NETCONF** - Network Configuration Protocol for device management
   - **Netmiko** - Multi-vendor library for SSH-based device interaction
+  - **Ansible** - Multi-vendor network automation tool written in python
 
-**AI Integration Component:**
+**ntegration Component:**
 
-- Incorporate AI services such as:
-  - OpenAI ChatGPT/GPT-4
-  - Google AI (Gemini/Bard)
-  - Azure OpenAI
-  - Anthropic Claude
-  - Or other approved AI services
+- Create Python Network Solution (Choose if you want to build with AI or Web Servers)
+  - Create a Python Web Application with the `flask` or `django` python library
+  - The Model Context Protocol SDKs for building AI Agents and Chatbots
+  - Python libraries `langgraph` and/or `langchain` for AI Workflows
+- Solve a real world network problem (Choose One of the Following based on your chosen automation component)
+  - Network device configuration backup and version control
+  - Generate and/or configure routing protocols
+  - Create AI Agents and bots for AI Driven NetOps
+  - A Group Nominated real world problem or solution (Requires Instructor Approval)
 
 **Technical Requirements:**
 
@@ -100,16 +107,16 @@ project-root/
 ### Phase 1: Planning and Design (Week 1)
 
 1. **Form your group** and select a project concept
-2. **Research and document** your chosen network automation protocol
-3. **Select your AI service** and obtain necessary API credentials
+2. **Research and document** your chosen network automation solution tool
+3. **Select AI or Web Framework** and a problem/solution
 4. **Create a project plan** with timeline and task distribution
 5. **Set up your development environment** and version control
 
 ### Phase 2: Core Development (Weeks 2-3)
 
-1. **Implement network device connectivity** using your chosen protocol
+1. **Implement network device connectivity** using your chosen tools
 2. **Develop core classes and methods** following OOP principles
-3. **Integrate AI service** with proper API handling
+3. **Integrate AI service or Web UI Wireframe** with proper API handling or UI Diagrams
 4. **Create basic functionality** connecting network data with AI processing
 5. **Implement error handling** and logging throughout your application
 
@@ -122,19 +129,6 @@ project-root/
 5. **Prepare demonstration** of your working solution
 
 ### Technical Specifications
-
-**Network Protocols:**
-
-- Demonstrate proper authentication and connection handling
-- Implement appropriate error handling for network failures
-- Show understanding of protocol-specific features and limitations
-
-**AI Integration:**
-
-- Secure API key management (never commit keys to version control)
-- Proper API request/response handling
-- Rate limiting and error handling for AI service calls
-- Meaningful integration that adds value to the network automation task
 
 **Code Quality:**
 
@@ -158,35 +152,35 @@ Your project must include:
 ### Exceptional (95-100 points) - Industry Standard Excellence
 
 - **Network Automation (25 pts)**: Sophisticated implementation with advanced features, excellent error handling, and optimal protocol usage
-- **AI Integration (25 pts)**: Creative and meaningful AI integration that significantly enhances functionality with robust error handling
+- **Solution Type (25 pts)**: Creative and solution that demonstrates a knowlege of production ready comprehensive solutions
 - **Code Quality (25 pts)**: Professional-grade code with excellent OOP design, comprehensive error handling, and optimal performance
 - **Documentation (25 pts)**: Comprehensive, professional documentation including detailed setup guides, API documentation, and architectural diagrams
 
 ### Proficient (85-94 points) - High Professional Standard
 
 - **Network Automation (22 pts)**: Solid implementation with good error handling and proper protocol usage
-- **AI Integration (22 pts)**: Well-integrated AI functionality that adds clear value to the solution
+- **Solution Integration (22 pts)**: Full set of utility integration, features, and complete operations
 - **Code Quality (22 pts)**: Clean, well-structured code with good OOP principles and adequate error handling
 - **Documentation (19 pts)**: Complete documentation with clear setup instructions, usage guides, and code comments
 
 ### Developing (75-84 points) - Good Foundation
 
 - **Network Automation (20 pts)**: Working network connectivity with basic functionality and some error handling
-- **AI Integration (20 pts)**: Functional AI integration that works but may be basic in implementation
+- **Solution Integration (20 pts)**: Functional solution that works free of noticable errors
 - **Code Quality (20 pts)**: Functional code with classes and methods, adequate structure
 - **Documentation (15 pts)**: Basic documentation covering essential setup and usage
 
 ### Beginning (50-74 points) - Basic Implementation
 
 - **Network Automation (15 pts)**: Basic network connectivity with minimal functionality
-- **AI Integration (15 pts)**: Simple AI integration with limited functionality
+- **Solution Integration (15 pts)**: Simple solution with limited functionality
 - **Code Quality (15 pts)**: Code works with some object-oriented elements but lacks sophistication
 - **Documentation (5 pts)**: Minimal documentation, basic README
 
 ### Needs Improvement (10-49 points) - Incomplete Attempt
 
 - **Network Automation (5 pts)**: Attempted network functionality but non-functional or severely limited
-- **AI Integration (3 pts)**: Attempted AI integration with limited success
+- **Solution Integration (3 pts)**: A functioning solution with limited success
 - **Code Quality (2 pts)**: Code structure present but significant functionality missing
 - **Documentation (0 pts)**: Little to no documentation
 
